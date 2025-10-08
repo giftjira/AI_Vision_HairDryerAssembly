@@ -1,0 +1,2 @@
+File_Name,Device_Addr,Host_Addr,WiFi_SSID,WiFi_USERNAME,WiFi_PWD,Camera_Addr,LstStat_Cam,LstStat_PwdOff,LstStat_WiFi,LstStat_MQTT,LstStat_ExitProg,LstStat_LogicLoop,Model_ID,Step
+DY08_P1,10.84.171.19,10.84.171.108,Tablet_PMFTH,09barcode01,P@ssw0rd,5,Good,Bad,Bad,Good,Good,Good,EH-NA0K-H

@@ -1,0 +1,3 @@
+Main Box,Sub Box,Model File,X,Y,W,H
+1,1,dataset/models/EH-NA0K-K/model_DY08_P1_S1.tflite,304,36,286,149
+1,2,dataset/models/EH-NA0K-K/model_DY08_P1_S1.tflite,104,200,503,171

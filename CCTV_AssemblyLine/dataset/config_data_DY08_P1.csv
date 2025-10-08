@@ -1,0 +1,8 @@
+Main Box,Sub Box,Model File,X,Y,W,H
+1,1,dataset/model_default.tflite,974,345,206,353
+2,1,dataset/model_default.tflite,724,297,142,356
+3,1,dataset/model_default.tflite,551,278,112,361
+4,1,dataset/model_default.tflite,309,298,71,232
+5,1,dataset/model_default.tflite,404,286,101,289
+6,1,dataset/model_default.tflite,125,268,172,214
+7,1,dataset/model_default.tflite,29,233,82,192
