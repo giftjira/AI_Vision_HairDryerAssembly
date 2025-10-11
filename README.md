@@ -1,34 +1,39 @@
 👁️ AI Vision Project
-Overview
+# Overview
 
 The AI Vision Project leverages image classification and object detection to monitor production processes in real time. It tracks cycle times, detects missing parts, and ensures accuracy in assembly and packing processes.
 
-Features
+---
 
-⏱️ Cycle Time Tracking: Detects part absence to calculate real-time cycle time per process.
+# Features
 
-🧩 Part Missing Tracking: Uses object detection to flag missing parts at specific packing steps.
+- ⏱️ Cycle Time Tracking: Detects part absence to calculate real-time cycle time per process.
 
-🖥️ Hardware setup with Tinker Board + Debian OS, USB camera, alarm speaker, and display monitor.
+- 🧩 Part Missing Tracking: Uses object detection to flag missing parts at specific packing steps.
+
+- 🖥️ Hardware setup with Tinker Board + Debian OS, USB camera, alarm speaker, and display monitor.
 
 🤖 AI-powered models trained with industry-standard tools.
 
-Technologies
+---
 
-Programming: Python (VS Code)
+# Technologies
 
-Libraries: OpenCV, PyTorch, Keras, TensorFlow
+- Programming: Python (VS Code)
 
-Training Tools: Roboflow, Teachable Machine, Google Colab
+- Libraries: OpenCV, PyTorch, Keras, TensorFlow
 
-Hardware: Tinker Board (Debian), USB camera, alarm speaker, display monitor
+- Training Tools: Roboflow, Teachable Machine, Google Colab
 
-Workflow
+- Hardware: Tinker Board (Debian), USB camera, alarm speaker, display monitor
+---
 
-USB camera captures real-time images of assembly/packing process.
+# Workflow
 
-AI model (classification/detection) identifies part presence or absence.
+- USB camera captures real-time images of assembly/packing process.
 
-System logs cycle time or triggers alarm/display alerts for missing parts.
+- AI model (classification/detection) identifies part presence or absence.
 
-Models trained and scaled with Roboflow, Colab, and Teachable Machine.
+- System logs cycle time or triggers alarm/display alerts for missing parts.
+
+- Models trained and scaled with Roboflow, Colab, and Teachable Machine.
