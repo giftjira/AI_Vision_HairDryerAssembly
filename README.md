@@ -1,11 +1,11 @@
-👁️ AI Vision Project
-# Overview
+# 👁️ AI Vision Project
+## Overview
 
 The AI Vision Project leverages image classification and object detection to monitor production processes in real time. It tracks cycle times, detects missing parts, and ensures accuracy in assembly and packing processes.
 
 ---
 
-# Features
+## Features
 
 - ⏱️ Cycle Time Tracking: Detects part absence to calculate real-time cycle time per process.
 
@@ -17,7 +17,7 @@ The AI Vision Project leverages image classification and object detection to mon
 
 ---
 
-# Technologies
+## Technologies
 
 - Programming: Python (VS Code)
 
@@ -28,7 +28,7 @@ The AI Vision Project leverages image classification and object detection to mon
 - Hardware: Tinker Board (Debian), USB camera, alarm speaker, display monitor
 ---
 
-# Workflow
+## Workflow
 
 - USB camera captures real-time images of assembly/packing process.
 
