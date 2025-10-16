@@ -41,11 +41,6 @@ The AI Vision Project leverages image classification and object detection to mon
 ## 1) System Architecture (Runtime)
 Four cooperating subsystems run across three devices. Their working directories and key files are listed exactly as used at runtime.
 
-This document expands on the architecture shown in **`file.md`** (Mermaid diagram) and explains:
-- **System Architecture** (runtime components and how they interact)
-- **Model Training Procedure** for both detection tasks
-- **Hardware Setup Procedure** (installers and required files)
-- Cross-component **relationships**, data flows, and sanity checks
 ```mermaid
 ---
 config:
@@ -175,6 +170,13 @@ flowchart TB
     style MTP stroke:#D50000
     click repo "https://github.com/giftjira/AI_Vision_HairDryerAssembly"
 ```
+This document expands on the architecture in diagram and explains:
+- **System Architecture** (runtime components and how they interact)
+- **Model Training Procedure** for both detection tasks
+- **Hardware Setup Procedure** (installers and required files)
+- Cross-component **relationships**, data flows, and sanity checks
+
+---
 
 ### 1.1 Part Missing Tracking — *Tinker Board Edge R*
 
