@@ -38,8 +38,8 @@ The AI Vision Project leverages image classification and object detection to mon
 
 - Models trained and scaled with Roboflow, Colab, and Teachable Machine.
 
-## 1) System Architecture (Runtime)
-Four cooperating subsystems run across three devices. Their working directories and key files are listed exactly as used at runtime.
+## 1) System Architecture
+Four cooperating subsystems run across three components. Their working directories and key files are listed exactly as used at runtime.
 
 ```mermaid
 ---
@@ -227,8 +227,6 @@ dataset/model_default.tflite
 **Outputs**
 - Time-series and per-cycle metrics (often CSV consumed by the Host PC visualization).
 
-> Note: Some notes may show the mask path as `dataset/ mask_img_DY08_P1_S1.png`. Use the no-space path `dataset/mask_img_DY08_P1_S1.png` for consistency.
-
 ---
 
 ### 1.3 Assembly Line Visualization — *Host PC*
@@ -343,7 +341,7 @@ Dataset Processing Tool/Data_Augmentation/data_augmentation_tool.py
 
 ## 3) Hardware Setup Procedure
 
-### 3.1 Part Missing Tracking — *Edge R*
+### 3.1 Part Missing Tracking — *Tinker Board Edge R*
 - **Install:** `Hardware Setup/Tinkerboard Edge R/setup.sh`  
 - **Uninstall (if needed):** `Hardware Setup/Tinkerboard Edge R/uninstall.sh`
 
@@ -354,60 +352,11 @@ Dataset Processing Tool/Data_Augmentation/data_augmentation_tool.py
 ### 3.3 Assembly Line Visualization — *Host PC*
 - **Manual Windows setup** per: `Hardware Setup/Host PC Setup/requirements.txt`
 
-### 3.4 CCTV Assembly Line — *Edge R*
+### 3.4 CCTV Assembly Line — *Tinker Board Edge R*
 - **Install:** `Hardware Setup/Tinkerboard Edge R/setup.sh`  
 - **Uninstall (if needed):** `Hardware Setup/Tinkerboard Edge R/uninstall.sh`  
 - **Streaming service:** `CCTV_AssemblyLine/mediamtx` with `CCTV_AssemblyLine/mediamtx.yml`
 
----
-
-## 4) Directory Map (Key Artifacts)
-
-```
-AI_Vision_HairDryerAssembly/
-├─ StepTracking_DY08_P7_main_30.py
-├─ config_DY08_P7_StepTracking.csv
-├─ alarm.wav
-├─ models/
-│  └─ EH-NA0K-K/
-│     └─ model_EH-NA0K-K.tflite      # Part Missing model (fp32)
-│  └─ .../....tflite
-├─ dataset/
-│  ├─ config_data_DY08_P1.csv
-│  ├─ const_data_DY08_P1.csv
-│  ├─ mask_img_DY08_P1_S1.png
-│  ├─ model_default.tflite
-│  ├─ models/
-│  │  ├─ EH-NA0K-K/
-│  │  │  └─ model_DY08_P1_S1.tflite   # Cycle Time model (int8)
-│  │  └─ .../....tflite
-│  └─ Image_capture_DY_08_P1_2025-08-16_08-46-25/
-├─ CycleTime_DY08_P1_main_11.py
-├─ CycleTime_DY08_P1_main_13_stream.py            # CCTV streaming
-├─ CycleTime_DY-08_host_14.py                     # Host visualization
-├─ data_DY08_2025-03-07.csv
-├─ CaptureImageSample.py
-├─ record_20250210_080734/
-├─ Model Training Tool/
-│  └─ yolov5_training_template.ipynb
-├─ Dataset Processing Tool/
-│  ├─ Image_Classifier/
-│  │  └─ image_classifier_final_F1.py
-│  └─ Data_Augmentation/
-│     └─ data_augmentation_tool.py
-├─ CCTV_AssemblyLine/
-│  ├─ mediamtx
-│  └─ mediamtx.yml
-└─ Hardware Setup/
-   ├─ Tinkerboard Edge R/
-   │  ├─ setup.sh
-   │  └─ uninstall.sh
-   ├─ Tinkerboard 2s/
-   │  ├─ setup.sh
-   │  └─ uninstall.sh
-   └─ Host PC Setup/
-      └─ requirements.txt
-```
 ---
 
 ### At a glance — Relationships
